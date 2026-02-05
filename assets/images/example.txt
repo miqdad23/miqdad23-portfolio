@@ -1,0 +1,12 @@
+<!-- 46 -->
+                <article class="story-card reveal" data-category="Random">
+                    <figure>
+                        <img src="assets/images/random/photo-03.jpg"
+                             loading="lazy"
+                             alt="Close-up of an old radio on a wooden table">
+                        <figcaption>
+                            <p class="story-title">Static hides in yesterday’s songs.</p>
+                            <p class="story-meta">Random • January, 2023 • Manikganj, Bangladesh</p>
+                        </figcaption>
+                    </figure>
+                </article>
