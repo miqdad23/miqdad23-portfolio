@@ -351,7 +351,7 @@ section {
 .hero-slideshow {
     position: absolute;
     inset: 0;
-    z-index: -3;
+    z-index: 0;
     overflow: hidden;
 }
 
@@ -374,10 +374,18 @@ section {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    z-index: -2;
+    z-index: 1;
     background:
-        linear-gradient(120deg, rgba(5, 6, 10, 0.96) 0%, rgba(5, 6, 10, 0.86) 40%, rgba(5, 6, 10, 0.4) 70%, rgba(5, 6, 10, 0.95) 100%),
-        radial-gradient(circle at top left, rgba(120, 90, 40, 0.2) 0, transparent 55%);
+        linear-gradient(120deg,
+            rgba(5, 6, 10, 0.75) 0%,
+            rgba(5, 6, 10, 0.65) 40%,
+            rgba(5, 6, 10, 0.3) 70%,
+            rgba(5, 6, 10, 0.8) 100%
+        ),
+        radial-gradient(circle at top left,
+            rgba(120, 90, 40, 0.25) 0,
+            transparent 55%
+        );
 }
 
 .hero-content {
@@ -555,7 +563,7 @@ section {
     margin-bottom: 1.2rem;
 }
 
-/* Instagram Preview */
+/* Instagram Preview (used as Facebook preview now) */
 .instagram-section {
     background: radial-gradient(circle at top, #14182a 0, #05060a 55%);
     border-top: 1px solid rgba(255, 255, 255, 0.03);
@@ -588,6 +596,7 @@ section {
     filter: saturate(1.05) contrast(1.05);
 }
 
+/* Label changed to Facebook */
 .insta-item::after {
     content: "Facebook";
     position: absolute;
@@ -928,8 +937,7 @@ textarea:focus-visible {
     transform: translateX(-50%) translateY(0);
 }
 
-/* Scroll-in animation starting state (already on .story-card)
-   Additional helper in case JS wants it on other elements */
+/* Scroll-in animation helper */
 .reveal {
     opacity: 0;
     transform: translateY(32px);
